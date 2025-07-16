@@ -40,24 +40,4 @@ updater.idle()
 
 
 
-# from telegram.ext import Updater, MessageHandler, Filters, CallbackContext
-# from telegram import Update
 
-# def get_file_id(update: Update, context: CallbackContext):
-#     # agar fayl document ko'rinishida yuborilgan bo'lsa
-#     if update.message.document:
-#         file_id = update.message.document.file_id
-#         update.message.reply_text(f"📂 Siz yuborgan document file_id:\n\n{file_id}")
-#     # agar video sifatida yuborilgan bo'lsa
-#     elif update.message.video:
-#         file_id = update.message.video.file_id
-#         update.message.reply_text(f"🎥 Siz yuborgan video file_id:\n\n{file_id}")
-#     else:
-#         update.message.reply_text("Bu xabar fayl emas. Iltimos, video yoki document yuboring.")
-
-# updater = Updater("8071405345:AAG_d05bX3bZHmGTXBlHmwy2QuhqPUoC4o4", use_context=True)
-# dp = updater.dispatcher
-# dp.add_handler(MessageHandler(Filters.all, get_file_id))
-
-# updater.start_polling()
-# updater.idle()
